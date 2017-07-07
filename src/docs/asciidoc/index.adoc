@@ -1,0 +1,37 @@
+= Extreme developer productivity with Gradle 4.0
+:title-slide-background-image: title.jpeg
+:title-slide-transition: zoom
+:title-slide-transition-speed: fast
+:revnumber: {project-version}
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../java]
+:deckjs_transition: fade
+:navigation:
+:menu:
+:status:
+
+https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
+
+== Agenda
+
+* 4 pillars of developer productivity
+- Q&A
+
+[%notitle]
+== Questions?
+image::questions.jpg[background, size=cover]
+
+== More resources
+
+* Slides: 
+    - https://wolfs.github.io/jugm-2017[]
+* Gradle Enterprise: 
+    - https://gradle.com[]
+* Deutsche "Einführung in Gradle"
+    - https://gradle.org/training/intro-to-gradle-ger/[]
+
+Learn more at https://gradle.org[www.gradle.org]
+
+[%notitle]
+== Thanks
+image::outro.jpeg[background, size=cover]
