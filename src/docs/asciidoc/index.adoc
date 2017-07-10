@@ -14,7 +14,7 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 
 == Overview of Gradle
 
-=== Gradle (The management summary)
+=== Gradle +++<br />+++ (management summary)
 
 * Multi purpose software automation tool
 * Build, automate and deliver better software, faster
@@ -35,7 +35,7 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 
 == Developer productivity
 
-=== Influences on developer productivity
+=== Influences on +++<br />+++ developer productivity
 
 * IDE
 * Languages and frameworks
@@ -43,7 +43,7 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 * Training
 * Food in cafeteria
 
-=== Four pillars of developer productivity
+=== Four pillars of +++<br />+++ developer productivity
 
 * Fast feedback cycles
 * High degree of automation
@@ -60,6 +60,13 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 
 > *Maximum build performance* is the maximum achievable performance of a build system *for your code base.*
 
+=== Test projects
+
+* Large monolithic: 1 prj, 50000 src
+* Small multiproject: 10 prj, 100 src/prj
+* Medium multiproject: 100 prj, 100 src/prj
+* Large multiproject: 500 prj, 100 src/prj
+
 [%notitle]
 === Incremental build
 image::incremental-build.png[background,size=70% 70%]
@@ -71,11 +78,40 @@ image::incremental-build.png[background,size=70% 70%]
 * Compile avoidance
 * Incremental compilation
 
+=== Build cache
+
+Gradle is reusing results +
+from *last time*  +
+when we ran *this build* +
+ on *this machine*. +
+
+=== Gradle can do better
+
+=== Why not...
+
+from *anytime before*  +
+when we ran *any build* +
+ *anywhere*. +
+
 [%notitle]
 === Build cache for Java projects
 image::build-cache.png[background,size=70% 70%]
 
 === Build cache
+
+[%step]
+[source,text]
+----
+$> gradle --build-cache assemble
+Build cache is an incubating feature.
+:compileJava FROM-CACHE
+:processResources
+:classes
+:jar
+:assemble
+
+BUILD SUCCESSFUL
+----
 
 === Build cache
 
@@ -86,7 +122,7 @@ image::build-cache.png[background,size=70% 70%]
 === Performance roadmap
 
 * Worker API (aka. parallel by default)
-* Incremental compile with Annotation processors
+* Incremental compile with annotation processors
 * Cacheable Scala and C/C++ tasks
 * Faster configuration time
 * N-Level build caches
@@ -176,6 +212,8 @@ image::console-output.gif[width=60%,height=60%]
 === Kotlin DSL
 
 * Kotlin DSL version 0.10 (Gradle 4.1)
+* Statically typed
+* Good IDE support
 
 [%notitle]
 == Questions?
@@ -183,12 +221,10 @@ image::questions.jpg[background, size=cover]
 
 == More resources
 
-* Slides: 
-    - https://wolfs.github.io/jugm-2017[]
-* Gradle Enterprise: 
-    - https://gradle.com[]
-* Deutsche "Einführung in Gradle"
-    - https://gradle.org/training/intro-to-gradle-ger/[]
+* Slides: https://wolfs.github.io/jugm-2017[]
+* Gradle Enterprise: https://gradle.com[]
+* Einführung in Gradle: https://gradle.org/training/intro-to-gradle-ger/[]
+* Gradle Summit 2017 videos: https://www.youtube.com/playlist?list=PLLQbIfXVLZqEFMPsWijGR043NBxwPvgtI[Youtube]
 
 Learn more at https://gradle.org[www.gradle.org]
 
