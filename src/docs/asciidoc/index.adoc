@@ -12,10 +12,170 @@ ifndef::sourcedir[:sourcedir: ../java]
 
 https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 
-== Agenda
+== Overview of Gradle
 
-* 4 pillars of developer productivity
-- Q&A
+=== Gradle (The management summary)
+
+* Multi purpose software automation tool
+* Build, automate and deliver better software, faster
+* Cross-platform
+* Language agnostic
+* Apache v2 licensed
+* A Build Tool + Gradle Enterprise (Hosted + Cloud)
+
+=== Momentum
+
+* ~30 full time engineers working on Gradle
+* 3.0 released on August 15th 2016
+* 3.4 released on February 20th 2016
+* 3.5 released on April 10th 2017
+* 4.0 released on June 14th 2017
+* Releasing every 4 - 6 weeks.
+* 3-5 million downloads per month
+
+== Developer productivity
+
+=== Influences on developer productivity
+
+* IDE
+* Languages and frameworks
+* Good hardware
+* Training
+* Food in cafeteria
+
+=== Four pillars of developer productivity
+
+* Fast feedback cycles
+* High degree of automation
+* Faster debugging
+* Productivity culture
+
+== Fast feedback cycles
+
+* Maximum build performance
+* Measure and optimize
+* Build reliability
+
+=== Maximum build performance
+
+> *Maximum build performance* is the maximum achievable performance of a build system *for your code base.*
+
+[%notitle]
+=== Incremental build
+image::incremental-build.png[background,size=70% 70%]
+
+=== Gradle is up to 100 times faster than Maven
+
+=== How
+
+* Compile avoidance
+* Incremental compilation
+
+[%notitle]
+=== Build cache for Java projects
+image::build-cache.png[background,size=70% 70%]
+
+=== Build cache
+
+=== Build cache
+
+* Stable for Java projects
+* GE provides a backend
+* Dockerhub: https://hub.docker.com/r/gradle/build-cache-node/[gradle/build-cache-node]
+
+=== Performance roadmap
+
+* Worker API (aka. parallel by default)
+* Incremental compile with Annotation processors
+* Cacheable Scala and C/C++ tasks
+* Faster configuration time
+* N-Level build caches
+* Multi-location support for cache backend
+
+=== Measure and optimize
+
+* Need data
+** CI server captures times
+** What about developer builds
+* Enter build scans
+
+=== Build reliability
+
+* Reliable parallelism
+* Cache is a forcing function
+* Reliable configure on demand
+* Build scans for debugging
+
+== Higher degree of automation
+
+=== Composite build
+
+* Works now with --continuous
+* Excellent IDE integration (Eclipse/Intellij)
+* Parallel composite build
+
+=== Composite build - roadmap
+
+* Integration with build scans
+* Make substitution configureable
+* Composite task names
+
+=== Variants
+
+What is wrong with this:
+
+[source,groovy]
+----
+dependencies {
+    compile project(':lib')
+}
+----
+
+=== Variants
+
+[source,groovy]
+----
+dependencies {
+    implementation project(':lib')
+}
+----
+
+=== Variants - roadmap
+
+* Source dependencies
+* Swift support
+* Variant aware DM for Binary repositories
+
+=== Faster debugging
+
+* Build scans!
+* Traceability
+* Custom values
+
+== Productivity Culture
+
+* Accountability
+* Professionalization
+* Product vs Support
+
+== Developer experience
+
+=== Guides
+
+image::guides.png[width=60%,height=60%]
+
+=== Console improvements
+
+* New console output
+* Commandline completion
+
+=== Console improvements
+
+image::console-output.gif[width=60%,height=60%]
+
+=== Kotlin DSL
+
+* Kotlin DSL version 0.10 (Gradle 4.1)
 
 [%notitle]
 == Questions?
