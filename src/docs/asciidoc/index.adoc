@@ -116,7 +116,7 @@ BUILD SUCCESSFUL
 === Build cache
 
 * Stable for Java projects
-* GE provides a backend
+* Gradle Enterprise provides a backend
 * Dockerhub: https://hub.docker.com/r/gradle/build-cache-node/[gradle/build-cache-node]
 
 === Performance roadmap
@@ -228,6 +228,4 @@ image::questions.jpg[background, size=cover]
 
 Learn more at https://gradle.org[www.gradle.org]
 
-[%notitle]
-== Thanks
-image::outro.jpeg[background, size=cover]
+== Thank you!
