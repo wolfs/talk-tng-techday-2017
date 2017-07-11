@@ -21,7 +21,7 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 * Cross-platform
 * Language agnostic
 * Apache v2 licensed
-* A Build Tool + Gradle Enterprise (Hosted + Cloud)
+* A Build Tool + Gradle Enterprise (on premise + cloud)
 
 === Momentum
 
