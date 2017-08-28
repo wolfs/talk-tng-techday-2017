@@ -1,4 +1,4 @@
-= Extreme developer productivity with Gradle 4.0
+= Extreme developer productivity with Gradle
 :title-slide-background-image: title.jpeg
 :title-slide-transition: zoom
 :title-slide-transition-speed: fast
@@ -32,6 +32,15 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 * 4.0 released on June 14th 2017
 * Releasing every 4 - 6 weeks.
 * 3-5 million downloads per month
+
+=== What is Gradle Enterprise?
+
+Gradle Enterprise is a platform on top of the Gradle build tool that allows to
+maximize productivity of developers and build teams, hosted on-premises.
+
+=== The feature sets
+
+image::ge_overview.svg[height=500px, width=auto]
 
 == Developer productivity
 
@@ -85,6 +94,8 @@ from *last time*  +
 when we ran *this build* +
  on *this machine*. +
 
+image::build_caching.svg[width=380px, height=auto]
+
 === Gradle can do better
 
 === Why not...
@@ -113,20 +124,21 @@ Build cache is an incubating feature.
 BUILD SUCCESSFUL
 ----
 
+=== Build cache - Demo
+
+[NOTE.speaker]
+--
+* Show cached build from CI (pull/push)
+* Show cache built-in node UI
+* Show cache controller UI
+* Look at cache controller UI
+--
+
 === Build cache
 
-* Stable for Java projects
+* Stable for Java, Groovy and Scala projects
 * Gradle Enterprise provides a backend
 * Dockerhub: https://hub.docker.com/r/gradle/build-cache-node/[gradle/build-cache-node]
-
-=== Performance roadmap
-
-* Worker API (aka. parallel by default)
-* Incremental compile with annotation processors
-* Cacheable Scala and C/C++ tasks
-* Faster configuration time
-* N-Level build caches
-* Multi-location support for cache backend
 
 === Measure and optimize
 
@@ -135,12 +147,56 @@ BUILD SUCCESSFUL
 ** What about developer builds
 * Enter build scans
 
+=== What are build scans?
+
+* Persistent record of what happened during a build
+* Permanent and shareable URL
+* For developers and build engineers
+
+=== Build scans - Demo
+
+[NOTE.speaker]
+--
+* Navigate to summary, open performance tab, open timeline tab, open plugins view
+* Show scan list
+* Go into detail of the Performance improvements
+** configuration time
+** long running tasks
+** long running tests
+* Build categorization via Tags
+--
+
+=== Measure and optimize
+
+* Need data
+** Use the Gradle Enterprise export API
+
+=== Export API
+
+video::202944447[vimeo,height=520]
+
 === Build reliability
 
 * Reliable parallelism
 * Cache is a forcing function
-* Reliable configure on demand
 * Build scans for debugging
+
+[NOTE.speaker]
+--
+* Show scan with build failure (link to line)
+* Show scan with failing test (link to test failure)
+* Search for dependency on dependency view
+* Search for builds with requested task `clean`
+* Infrastructure comparison
+--
+
+=== Build performance and build scans - Demo
+
+[NOTE.speaker]
+--
+* Show input comparison for build cache
+* Go into more details in the performance tab
+--
 
 == Higher degree of automation
 
@@ -156,37 +212,16 @@ BUILD SUCCESSFUL
 * Make substitution configureable
 * Composite task names
 
-=== Variants
-
-What is wrong with this:
-
-[source,groovy]
-----
-dependencies {
-    compile project(':lib')
-}
-----
-
-=== Variants
-
-[source,groovy]
-----
-dependencies {
-    implementation project(':lib')
-}
-----
-
-=== Variants - roadmap
-
-* Source dependencies
-* Swift support
-* Variant aware DM for Binary repositories
-
 === Faster debugging
 
 * Build scans!
 * Traceability
 * Custom values
+
+[NOTE.speaker]
+--
+* Show custom values: CI, VCS information, Checkstyle errors, Links, etc.
+--
 
 == Productivity Culture
 
@@ -200,15 +235,6 @@ dependencies {
 
 image::guides.png[width=60%,height=60%]
 
-=== Console improvements
-
-* New console output
-* Commandline completion
-
-=== Console improvements
-
-image::console-output.gif[width=60%,height=60%]
-
 === Kotlin DSL
 
 * Kotlin DSL version 0.10 (Gradle 4.1)
@@ -221,11 +247,13 @@ image::questions.jpg[background, size=cover]
 
 == More resources
 
-* Slides: https://wolfs.github.io/jugm-2017[]
+* Slides: https://wolfs.github.io/tng-techday-2017[]
 * Gradle Enterprise: https://gradle.com[]
 * Einführung in Gradle: https://gradle.org/training/intro-to-gradle-ger/[]
 * Gradle Summit 2017 videos: https://www.youtube.com/playlist?list=PLLQbIfXVLZqEFMPsWijGR043NBxwPvgtI[Youtube]
 
 Learn more at https://gradle.org[www.gradle.org]
 
-== Thank you!
+[%notitle]
+== Thanks
+image::outro.jpeg[background, size=cover]

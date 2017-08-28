@@ -1,0 +1,66 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="449px" height="81px" version="1.1">
+    <defs/>
+    <g transform="translate(0.5,0.5)">
+        <rect x="120" y="0" width="190" height="80" fill="#ffffff" stroke="#000000" pointer-events="none"/>
+        <g transform="translate(173.5,31.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="82" height="17"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 16px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 82px; white-space: nowrap; word-wrap: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+                            Gradle task
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="41" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">Gradle
+                    task
+                </text>
+            </switch>
+        </g>
+        <g transform="translate(38.5,11.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="42" height="17"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 16px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 44px; white-space: nowrap; word-wrap: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+                            <div>
+                                <span>inputs</span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="21" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                    inputs
+                </text>
+            </switch>
+        </g>
+        <path d="M 10 40 L 113.63 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 118.88 40 L 111.88 43.5 L 113.63 40 L 111.88 36.5 Z" fill="#000000" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(357.5,11.5)">
+            <switch>
+                <foreignObject style="overflow:visible;" pointer-events="all" width="52" height="17"
+                               requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml"
+                         style="display: inline-block; font-size: 16px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 54px; white-space: nowrap; word-wrap: normal; text-align: center;">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                             style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+                            outputs
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="26" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                    outputs
+                </text>
+            </switch>
+        </g>
+        <path d="M 310 40 L 433.63 40.95" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 438.88 40.99 L 431.86 44.44 L 433.63 40.95 L 431.91 37.44 Z" fill="#000000" stroke="#000000"
+              stroke-miterlimit="10" pointer-events="none"/>
+    </g>
+</svg>
