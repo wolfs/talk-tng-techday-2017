@@ -27,9 +27,9 @@ https://twitter.com/wolfs42[Stefan Wolf (@wolfs42)], Gradle
 
 * ~30 full time engineers working on Gradle
 * 3.0 released on August 15th 2016
-* 3.4 released on February 20th 2016
 * 3.5 released on April 10th 2017
 * 4.0 released on June 14th 2017
+* 4.1 released on Aug 8th 2017
 * Releasing every 4 - 6 weeks.
 * 3-5 million downloads per month
 
