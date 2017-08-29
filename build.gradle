@@ -29,6 +29,7 @@ dependencies {
     gems 'rubygems:thread_safe:0.3.4'
 }
 
+
 ext {
     revealjsVersion = '3.5.0'
     asciidoctorBackendVersion = 'master'
