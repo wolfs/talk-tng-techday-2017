@@ -40,7 +40,7 @@ maximize productivity of developers and build teams, hosted on-premises.
 
 === The feature sets
 
-image::ge_overview.svg[height=500px, width=auto]
+image::ge_feature_sets.svg[height=500px, width=auto]
 
 == Developer productivity
 
@@ -94,7 +94,7 @@ from *last time*  +
 when we ran *this build* +
  on *this machine*. +
 
-image::build_caching.svg[width=380px, height=auto]
+image::task_inputs_outputs.svg[width=380px, height=auto]
 
 === Gradle can do better
 
@@ -103,6 +103,8 @@ image::build_caching.svg[width=380px, height=auto]
 from *anytime before*  +
 when we ran *any build* +
  *anywhere*. +
+
+image::build_caching.svg[width=380px, height=auto]
 
 [%notitle]
 === Build cache for Java projects
@@ -159,10 +161,6 @@ BUILD SUCCESSFUL
 --
 * Navigate to summary, open performance tab, open timeline tab, open plugins view
 * Show scan list
-* Go into detail of the Performance improvements
-** configuration time
-** long running tasks
-** long running tests
 * Build categorization via Tags
 --
 
@@ -195,7 +193,10 @@ video::202944447[vimeo,height=520]
 [NOTE.speaker]
 --
 * Show input comparison for build cache
-* Go into more details in the performance tab
+* Go into detail of the Performance improvements
+** configuration time
+** long running tasks
+** long running tests
 --
 
 == Higher degree of automation
@@ -247,12 +248,10 @@ image::questions.jpg[background, size=cover]
 
 == More resources
 
-* Slides: https://wolfs.github.io/tng-techday-2017[]
+* Slides: https://wolfs.github.io/talk-tng-techday-2017[]
 * Gradle Enterprise: https://gradle.com[]
-* Einführung in Gradle: https://gradle.org/training/intro-to-gradle-ger/[]
+* Gradle Build Tool: https://gradle.org[]
 * Gradle Summit 2017 videos: https://www.youtube.com/playlist?list=PLLQbIfXVLZqEFMPsWijGR043NBxwPvgtI[Youtube]
-
-Learn more at https://gradle.org[www.gradle.org]
 
 [%notitle]
 == Thanks
